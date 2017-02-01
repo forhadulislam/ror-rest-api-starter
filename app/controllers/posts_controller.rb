@@ -38,8 +38,12 @@ class PostsController < ApplicationController
     end
   end
   
-  def searchpost
-    @results = Post.where("name LIKE '%#{params[:name]}%'")
+  def search
+    if params[:name] != ''
+      @results = Post.where("name LIKE '%#{params[:name]}%'")
+    else
+      @results = { 'result': 'none'}
+    end
     render json: @results
   end
 

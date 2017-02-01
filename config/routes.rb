@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'posts/searchpost' => 'posts#searchpost'
+  get 'posts/search' => 'posts#search'
   resources :posts
   resources :user
   
