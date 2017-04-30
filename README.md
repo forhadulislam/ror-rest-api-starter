@@ -16,12 +16,16 @@ To create this scaffold we can this command:
 ## How to delete Scaffold
 To delete a Scaffold / Controller / Model we can use destroy command of rails.
 
-`rails destroy controller name_of_controller
-rails destroy model name_of_model
-rails destroy scaffold name_of_scaffold`
+`rails destroy controller name_of_controller`
+
+`rails destroy model name_of_model`
+
+`rails destroy scaffold name_of_scaffold`
 
 Newer Rails versions have added a new `d` shortcut to the command, so now you can write:
 
-`rails d controller name_of_controller
-rails d model name_of_model
-rails d scaffold name_of_scaffold`
+`rails d controller name_of_controller`
+
+`rails d model name_of_model`
+
+`rails d scaffold name_of_scaffold`
