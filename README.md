@@ -15,6 +15,9 @@ To create this scaffold we can this command:
 
 `rails g scaffold ask sender:references message:string`
 
+`rails g scaffold task user:references title:string datetime:datetime`
+
+
 ## How to delete Scaffold
 
 To delete a Scaffold / Controller / Model we can use destroy command of rails.
