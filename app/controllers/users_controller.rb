@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   def login
     @user = User.where("username = '#{params[:username]}' AND password = '#{params[:password]}'")
     
-    # Checks if the user has any valid info
+    # Checks if the user has any valid user data
     if @user.any?
       render json: @user
     else
