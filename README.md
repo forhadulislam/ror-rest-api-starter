@@ -51,3 +51,8 @@ Remove the table and quit the SQLite console:
 You can remove the extra security layer of authentication by placing ':null_session' instead of ':exception' in the `application_controller.rb` file:
 
 `protect_from_forgery with: :null_session`
+
+# Basic User login
+
+For making the works easier. We have a simple user authentication api for checking if the user is eligible for logging in. It is under the User controller. The default route is `users/login`.
+

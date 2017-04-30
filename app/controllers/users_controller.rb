@@ -11,6 +11,11 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
   end
+  
+  def login
+    @user = User.where("username = '#{params[:username]}' AND password = '#{params[:password]}'")
+    render json: @user
+  end
 
   # GET /users/new
   def new
