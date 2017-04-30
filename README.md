@@ -15,9 +15,11 @@ To create this scaffold we can this command:
 `rails generate scaffold User email:string username:string password:text name:text active:boolean location:text`
 
 For our `ask` scaffold we have used this command:
+
 `rails g scaffold ask sender:references message:string`
 
 For `task` scaffold we have used the following command:
+
 `rails g scaffold task user:references title:string datetime:datetime`
 
 
