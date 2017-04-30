@@ -11,7 +11,6 @@ Rails.application.routes.draw do
   resources :asks
   resources :users
   get 'posts/search' => 'posts#search'
-  resources :posts
   
   
   
