@@ -45,3 +45,9 @@ Remove the table and quit the SQLite console:
 `sqlite> drop table asks;`
 
 `sqlite> .quit`
+
+# Facing authentication problem ?
+
+You can remove the extra security layer of authentication by placing ':null_session' instead of ':exception' in the `application_controller.rb` file:
+
+`protect_from_forgery with: :null_session`

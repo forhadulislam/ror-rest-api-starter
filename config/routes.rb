@@ -1,11 +1,18 @@
 Rails.application.routes.draw do
+  shallow do
+    resources :users do
+      resources :asks
+      resources :tasks
+    end
+  end
   resources :tasks
-  resources :asks
   resources :asks
   resources :users
   get 'posts/search' => 'posts#search'
   resources :posts
-  resources :user
+  
+  
+  
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
