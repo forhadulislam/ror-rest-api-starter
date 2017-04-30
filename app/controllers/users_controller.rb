@@ -14,7 +14,14 @@ class UsersController < ApplicationController
   
   def login
     @user = User.where("username = '#{params[:username]}' AND password = '#{params[:password]}'")
-    render json: @user
+    
+    # Checks if the user has any valid info
+    if @user.any?
+      render json: @user
+    else
+      render :text => "404 User Not found", :status => 404 # You can render your own template here
+    end
+    
   end
 
   # GET /users/new
