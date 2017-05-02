@@ -52,6 +52,7 @@ Rails.application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
+  
 
   # Example resource route with concerns:
   #   concern :toggleable do
@@ -66,4 +67,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  
 end
